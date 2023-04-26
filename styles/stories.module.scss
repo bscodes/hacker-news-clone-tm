@@ -1,0 +1,27 @@
+.item {
+  display: flex;
+  margin: 10px 0;
+
+  .count {
+    flex-basis: auto;
+    font-size: 14px;
+    margin-right: 5px;
+    display: block;
+    width: 20px;
+
+    ::after {
+      content: ".";
+    }
+  }
+}
+
+.footer {
+  padding: 10px 0 40px 30px;
+
+  a {
+    color: #000;
+    font-size: 14px;
+    display: inline-block;
+    text-decoration: none;
+  }
+}

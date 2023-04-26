@@ -1,0 +1,51 @@
+.story {
+  flex: 100;
+  display: inline-block;
+
+  .title {
+    font-size: 15px;
+    margin-bottom: 3px;
+  }
+
+  .title > a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .title > a:visited {
+    color: #828282;
+  }
+
+  .meta {
+    font-size: 12px;
+
+    .point {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .meta a {
+    color: #828282;
+    text-decoration: none;
+    margin-right: 0.5rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .source {
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 5px;
+
+    a {
+      color: #828282;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

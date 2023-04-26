@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  font-size: 14px;
+  background-color: #ff6601;
+
+  .left {
+    flex: 9;
+  }
+
+  .right {
+    flex: 1;
+    text-align: right;
+  }
+
+  .title,
+  .logo {
+    font-weight: bold;
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    padding-right: 4px;
+    color: #000;
+  }
+
+  .login {
+    display: inline-block;
+    font-size: 11px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .nav {
+    display: inline-block;
+    padding: 2px 0;
+
+    ul {
+      list-style: none;
+
+      li {
+        display: inline-block;
+
+        a {
+          display: inline-block;
+          text-decoration: none;
+          color: #000;
+          font-size: 11px;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}

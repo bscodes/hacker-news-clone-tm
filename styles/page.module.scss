@@ -1,0 +1,16 @@
+.main {
+  width: 85%;
+  margin: auto;
+  padding: 10px 0 0 0;
+
+  @media (max-width: 750px) {
+    padding: 0;
+    width: auto;
+  }
+
+  .page {
+    color: #828282;
+    background: #fff;
+    padding: 3px 10px;
+  }
+}
