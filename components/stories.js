@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import Story from './updated-story'
+import UpdatedStory from './updated-story'
 import styles from '../styles/stories.module.scss'
 
 
@@ -23,7 +23,7 @@ const Stories = ({
                 </span>
               </>
             ) : null}
-            <Story
+            <UpdatedStory
               id={story.id}
               title={story.title}
               date={story.date}

@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Story from './story';
+import { observe } from '../lib/get-item';
 
 const UpdatedStory = (props) => {
   const [story, setStory] = useState(props);
