@@ -1,0 +1,19 @@
+.item {
+  padding: 10px 30px;
+
+  .form {
+    padding: 15px 0;
+  }
+
+  .comments {
+    padding: 10px 0 20px;
+
+    .loading {
+      font-size: 13px;
+    }
+  }
+
+  @media (max-width: 750px) {
+    padding: 8px 0px;
+  }
+}
