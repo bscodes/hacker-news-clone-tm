@@ -47,13 +47,13 @@ const Story = ({
             User: {user}
           </a>
         </Link>
-        <Link href={`/items/${id}`} legacyBehavior className={styles.timeAgo}>
+        <Link href={`/item/${id}`} legacyBehavior className={styles.timeAgo}>
           <a>
             {date && timeAgo(new Date(date))} ago
           </a>
         </Link>
         {!!commentsCount && (
-          <Link href={`/items/${id}`} legacyBehavior className={styles.commentsCount}>
+          <Link href={`/item/${id}`} legacyBehavior className={styles.commentsCount}>
             <a>
               {commentsCount} {pluralCommentCount(commentsCount, 'comment')}
             </a>

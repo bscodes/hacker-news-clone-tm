@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from '../styles/item.module.scss';
 import Story from './story';
+import CommentForm from './comment-form';
+import Comment from './comment';
 
 const Item = ({
   story,
@@ -13,14 +15,16 @@ const Item = ({
       />
 
       <div className={styles.form}>
-        {/* 
-        TODO: <CommentForm/>
-         */}
+        <CommentForm/>
       </div>
 
       <div className={styles.comments}>
         {comments ? (
-          comments.map(comment => (<>/* <Comment /> */</>))
+          comments.map(comment => (
+          <Comment 
+            key={comment.id}
+            {...comment}
+          />))
         ) : (
           <div className={styles.loading}>
             Loading...

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import Story from './story'
+import Story from './updated-story'
 import styles from '../styles/stories.module.scss'
 
 

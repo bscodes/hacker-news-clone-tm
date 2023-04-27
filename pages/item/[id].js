@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import getItem from '../../lib/get-item'
 import getComments from '../../lib/get-comments'
 import Page from '../../components/page';
+import Item from '../../components/item';
 
 export function getStaticPaths() {
   return {
@@ -46,7 +47,10 @@ const News = ({story}) => {
 
   return (
     <Page>
-      {/* <Item/> */}
+      <Item
+        story={story}
+        comments={comments}
+      />
     </Page>
   )
 }
